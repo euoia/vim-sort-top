@@ -1,6 +1,6 @@
-# vim-sort-use
+# vim-sort-top
 
-Sort the _use_ statements at the top of your file alphabetically.
+Sort the statements at the top of your file alphabetically.
 
 Requires the `sort` executable in your PATH.
 
@@ -8,12 +8,12 @@ Requires the `sort` executable in your PATH.
 
 To sort the _use_ statements:
 ```
-:call SortUse()
+:call SortTop("use")
 ```
 
 To sort the _use_ statements when your PHP file is saved, add this to your
 `.vimrc`:
 
 ```
-autocmd FileType php nmap <leader>s :call SortUse()<cr>
+autocmd FileType php nmap <leader>s :call SortTop("use")<cr>
 ```
