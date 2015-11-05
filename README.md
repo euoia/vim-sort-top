@@ -15,7 +15,7 @@ To sort the _use_ statements when your PHP file is saved, add this to your
 `.vimrc`:
 
 ```
-autocmd FileType php nmap <leader>s :call SortTop("use")<cr>
+autocmd BufWrite *.php silent execute 'call SortTop("use")'
 ```
 
 You can use it sort _require_ statements too:
